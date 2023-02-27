@@ -1,0 +1,171 @@
+/*Cores
+
+Primary Color: #12362F; (Verde)
+Secondary Color: #CB462C; (Laranja)
+Tertiary Color: #E4973B; (Amarelo)
+Background Color: #FEFEFE; (Branco)
+Text Color: ;
+
+/*Main*/
+
+body {
+	background-image: url('https://img.freepik.com/free-photo/aerial-view-landscape-covered-tall-green-trees_181624-31259.jpg?t=st=1677425468~exp=1677426068~hmac=26ea2804e849827ca3f61d4c6f1672db9ce3c057db79a56fb5e177432ddf761b');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#section-banner {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	padding-top: 65px;
+	background-image: url('../galeria/bg-image2.png');
+	background-size: cover;
+	background-color: #12232F;
+	color: #12232F;
+}
+
+.div-text-banner {
+	width: 100%;
+	max-width: 500px;
+	padding: 15px;
+}
+
+.title-banner {
+	font-size: 1.825em;
+	color:  #ff7e00;
+}
+
+.text-banner {
+	margin: 15px 0;
+	font-size: 0.825em;
+	line-height: 25px;
+	color: white;
+}
+
+.button-sobre {
+	width: 120px;
+	height: 35px;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #ff7e00;
+	border-radius: 5px;
+	background-color: #ff7e00;
+	font-size: 1em;
+	color: #12232F;
+}
+
+.button-sobre:hover {
+	border: 2px solid #ff7e00;
+	background: none;
+	color: #FEFEFE;
+	transition: background .3s;
+}
+
+/**/
+
+#section-atuacao {
+	width: 100%;
+	height: auto;
+	background-color: #FEFEFE;
+}
+
+.list-atuacao {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 30px;
+}
+
+.item-atuacao {
+	width: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 1px solid dimgray;
+	border-radius: 5px;
+	margin-top: 130px;
+	text-align: center;
+	padding: 20px;
+	background-color: #12362F;
+	border: 2px solid #12362F;
+	color: white;
+}
+
+.item-atuacao:hover {
+	background: none;
+	color: black;
+	box-shadow: 0 0 10px black;
+	transition: background .3s;
+}
+
+.item-atuacao > img {
+	width: 150px;
+	margin-top: -100px;
+	position: absolute;
+}
+
+.item-atuacao:hover > img {
+	width: 160px;
+	transition: .3s;
+}
+
+.item-atuacao > p {
+	margin-top: 80px;
+	width: 100%;
+}
+
+/**/
+
+#section-servicos {
+	width: 100%;
+	background-color: rgba(18, 54, 47);
+	color: #FEFEFE;
+}
+
+/**/
+
+#section-diferencial {
+	width: 100%;
+	background-color: rgba(18, 54, 47, .8);
+	color: #FEFEFE;
+}
+
+.content-diferencial {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 30px;
+}
+
+.item-diferencial {
+	width: 230px;
+	height: auto;
+	margin-bottom: 30px;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, .2);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.item-diferencial:hover {
+	box-shadow: 0 0 10px black;
+}
+
+.item-diferencial > img {
+	width: 40%;
+	height: auto;
+	padding: 10px 0;
+}
+
+.item-diferencial p {
+	padding: 10px 0;
+	text-align: center;
+	border-top: 1px solid dimgray;
+}
