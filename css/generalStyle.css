@@ -216,7 +216,7 @@ nav {
 
 .list-nav-links a:hover {
 	color: #E4973B;
-	transition: .3s;
+	transition: .1s;
 }
 
 .item-list-nav-links {
@@ -227,7 +227,7 @@ nav {
 
 .item-list-nav-links:hover {
 	border-bottom: 3px solid #E4973B;
-	transition: .3s;
+	transition: .1s;
 }
 
 .button-contato {
@@ -398,7 +398,7 @@ footer {
 	height: 170px;
 	border: 0;
 	opacity: .6;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .local-footer > iframe:hover {
@@ -412,10 +412,10 @@ footer {
 	width: 100%;
 	text-align: center;
 	padding: 10px;
-	font-size: 0.875em;
 	border-top: 1px solid dimgray;
 	background-color: #12232F;
 	color: white;
+	font-size: 0.8em;
 }
 
 .dev p a {

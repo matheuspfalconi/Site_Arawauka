@@ -6,6 +6,23 @@ Tertiary Color: #E4973B; (Amarelo)
 Background Color: #FEFEFE; (Branco)
 Text Color: ;
 
+/*Loading*/
+
+#div-loading {
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	background-image: url('../galeria/animacao-logo.gif');
+	background-repeat: no-repeat;
+	background-size: 250px;
+	background-position: center;
+}
+
+#content-home {
+	display: none;
+}
+
+
 /*Main*/
 
 body {
@@ -33,7 +50,7 @@ body {
 
 .title-banner {
 	font-size: 1.825em;
-	color:  #ff7e00;
+	color:  #fca856;
 }
 
 .text-banner {
@@ -50,15 +67,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid #ff7e00;
+	border: 2px solid #fca856;
 	border-radius: 5px;
-	background-color: #ff7e00;
+	background-color: #fca856;
 	font-size: 1em;
 	color: #12232F;
 }
 
 .button-sobre:hover {
-	border: 2px solid #ff7e00;
 	background: none;
 	color: #FEFEFE;
 	transition: background .3s;
@@ -76,7 +92,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	column-gap: 30px;
+	column-gap: 15px;
 }
 
 .item-atuacao {
@@ -86,7 +102,7 @@ body {
 	justify-content: center;
 	border: 1px solid dimgray;
 	border-radius: 5px;
-	margin-top: 130px;
+	margin-top: 115px;
 	text-align: center;
 	padding: 20px;
 	background-color: #12362F;
@@ -121,8 +137,68 @@ body {
 
 #section-servicos {
 	width: 100%;
-	background-color: rgba(18, 54, 47);
+	background-color: #FEFEFE;
+}
+
+.content-servicos {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	column-gap: 15px;
+}
+
+.item-servicos {
+	width: 300px;
+	height: 400px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: center;
 	color: #FEFEFE;
+	font-size: 1.225em;
+
+	background-color: rgba(45, 145, 128, 1);
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+	cursor: pointer;
+	z-index: 1;
+}
+
+.item-servicos:hover {
+	box-shadow: 0 0 10px black;
+	background-size: 300%;
+}
+
+.item-servicos > p {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 260px;
+}
+
+#serv-gestao {background-image: url('https://img.freepik.com/free-photo/consulting-with-lawyer_1098-19616.jpg?w=740&t=st=1677513083~exp=1677513683~hmac=cb83399ef6a2997f2e56becb3e9286da7b81677ea9c9d4f656cbe66b50562dfa');}
+#serv-gerenciamento {background-image: url('https://img.freepik.com/free-photo/researchers-looking-alternative-energy-souces_23-2149311443.jpg?w=740&t=st=1677514464~exp=1677515064~hmac=2c632e0623f01136ef2f47d7760982e67eca71d6747492f780adfb76e40bf2d7');}
+#serv-conservacionistas {background-image: url('https://img.freepik.com/free-photo/elderly-person-children-holding-plant_1150-18573.jpg?w=740&t=st=1677514536~exp=1677515136~hmac=808a866193cfca42edb8d6fff6514682367c01d45fee2037051b8218034ff54b');}
+#serv-complementares {background-image: url('https://img.freepik.com/free-photo/businesspeople-meeting-plan-analysis-graph-company-finance-strat_74952-1347.jpg?w=996&t=st=1677514585~exp=1677515185~hmac=d9c1bccdcced60b31debd020503760c0b7eb3215163be7ad5160ae29f4d31c73');}
+#serv-audio {background-image: url('https://img.freepik.com/free-photo/aerial-view-blue-sky-with-white-clouds-floating-fields_181624-60374.jpg?w=740&t=st=1677514622~exp=1677515222~hmac=60f5b2308638465220c682a9c8c7b082b588c4b8f4ada638eba58e3e8b2a14ad');}
+
+.img-servicos {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	padding: 0 50px;
+	margin-top: 150px;
+	margin-left: 500px;
+	z-index: 0;
+}
+
+.img-servicos > img {
+	width: 800px;
+	opacity: .3;
 }
 
 /**/
@@ -168,4 +244,40 @@ body {
 	padding: 10px 0;
 	text-align: center;
 	border-top: 1px solid dimgray;
+}
+
+/**/
+
+#section-parceiros {
+	width: 100%;
+	background-color: #FEFEFE
+}
+
+.list-parceiros {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 15px;
+}
+
+.item-parceiro {
+	width: 200px;
+	height: 100px;
+	background-position: center;
+	background-size: cover;
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.item-parceiro:hover {
+	box-shadow: 0px 0px 10px gray;
+}
+
+#tubo-filmes {background-image: url('../galeria/parceiros/tuboFilmes-logo.png');}
+
+#lm-advocacia {
+	background-image: url('../galeria/parceiros/lmAdvogados-logo.png');
+	background-size: 150%;
 }
