@@ -18,217 +18,279 @@
 		<link rel="icon" href="galeria/favicon.png">
     
         <link rel="shortcut icon" href="galeria/favicon.png">
+
+        <script type="text/javascript" src="js/loading.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/smoothScroll.js"></script>
 	</head>
 
 	<body>
-		<header>
-			<div>
-				<div class="div-logo">
-					<a href="index.html"><img src="galeria/logo.png"></a>
-				</div>
+		<div id="div-loading">
+		</div>
 
-				<nav>
-					<ul class="list-nav-links">
-						<a href="index.html"><li class="item-list-nav-links">Início</li></a>
-						<a href="sobre.html"><li class="item-list-nav-links">Quem Somos</li></a>
-						<a href="servicos.html"><li class="item-list-nav-links">Serviços</li></a>
-					</ul>
-
-					<a href="#section-contato"><div class="button-contato">
-						<span>Fale Conosco</span>
-					</div></a>
-				</nav>
-			</div>
-		</header>
-
-		<main>
-			<section id="section-banner">
+		<div id="content-home">
+			<header>
 				<div>
-					<div class="div-text-banner">
-						<p class="title-banner">Ajudando a deixar o meio ambiente adequado para as gerações futuras!</p>
-
-						<p class="text-banner">Zelando pelo cumprimento das políticas ambientais, trabalhando harmonicamente com a natureza garantindo a melhoria da produção com a qualidade do trabalho e a preservação ambiental.</p>
-
-						<a href="sobre.html"><div class="button-sobre">
-							<span>Saiba Mais</span>
-						</div></a>
-					</div>
-				</div>
-			</section>
-
-			<section id="section-atuacao">
-				<div>
-					<div class="div-title-section">	
-						<h2 class="title-section">NOSSA ATUAÇÃO</h2>
-						<p class="subtitle-section">Conheça um pouco mais sobre nossa área de atuação</p>
+					<div class="div-logo">
+						<a href="index.html"><img src="galeria/logo.png"></a>
 					</div>
 
-					<div class="content-atuacao">
-						<ul class="list-atuacao">
-							<li class="item-atuacao">
-								<img src="https://cdn-icons-png.flaticon.com/512/3732/3732465.png">
-
-								<p>Energia</p>
-							</li>
-
-							<li class="item-atuacao">
-								<img src="https://cdn-icons-png.flaticon.com/512/6984/6984983.png">
-
-								<p>Infraestrutura e Transporte</p>
-							</li>
-
-							<li class="item-atuacao">
-								<img src="https://cdn-icons-png.flaticon.com/512/3275/3275628.png">
-
-								<p>Mineração</p>
-							</li>
-
-							<li class="item-atuacao">
-								<img src="https://cdn-icons-png.flaticon.com/512/3256/3256216.png">
-
-								<p>Indústria</p>
-							</li>
-
-							<li class="item-atuacao">
-								<img src="https://cdn-icons-png.flaticon.com/512/2098/2098439.png">
-
-								<p>Empreendimentos on-shore e off-shore</p>
-							</li>
+					<nav>
+						<ul class="list-nav-links">
+							<a href="index.html"><li class="item-list-nav-links">Início</li></a>
+							<a href="sobre.html"><li class="item-list-nav-links">Quem Somos</li></a>
+							<a href="servicos.html"><li class="item-list-nav-links">Serviços</li></a>
+							<a href="blog.html"><li class="item-list-nav-links">Blog</li></a>
 						</ul>
-					</div>
+
+						<a href="#section-contato"><div class="button-contato">
+							<span>Fale Conosco</span>
+						</div></a>
+					</nav>
 				</div>
-			</section>
+			</header>
 
-			<section id="section-servicos">
-				<div>
-					<div class="div-title-section">	
-						<h2 class="title-section">SERVIÇOS PRESTADOS</h2>
-					</div>
-				</div>
-			</section>
-
-			<section id="section-diferencial">
-				<div>
-					<div class="div-title-section">	
-						<h2 class="title-section">NOSSOS DIFERENCIAIS</h2>
-					</div>
-
-					<div class="content-diferencial">
-						<div class="item-diferencial">
-							<img src="https://cdn-icons-png.flaticon.com/512/476/476863.png">
-
-							<p>Equipe Técnica multidisciplinar com alta capacidade para resolução de problemas</p>
-						</div>
-
-						<div class="item-diferencial">
-							<img src="https://cdn-icons-png.flaticon.com/512/5404/5404922.png">
-
-							<p>Bom relacionamento com órgãos ambientais</p>
-						</div>
-
-						<div class="item-diferencial">
-							<img src="https://cdn-icons-png.flaticon.com/512/1550/1550010.png">
-
-							<p>Cumprimento dos prazos acordados e rapidez na entrega dos produtos</p>
-						</div>
-
-						<div class="item-diferencial">
-							<img src="https://cdn-icons-png.flaticon.com/512/4718/4718471.png">
-
-							<p>Alta qualidade dos relatórios e demais produtos</p>
-						</div>
-
-						<div class="item-diferencial">
-							<img src="https://cdn-icons-png.flaticon.com/512/4371/4371115.png">
-
-							<p>Transparência nas etapas do processo</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="section-contato">
-				<div>
-					<div class="div-title-section">	
-						<h2 class="title-section">FALE CONOSCO</h2>
-					</div>
-
-					<div class="content-contato">
-						<form>
-							<div class="item-form double-item-form">
-								<div class="sub-item-form">
-									<label>Nome: </label>
-									<input type="text" name="nome" required>
-								</div>
-
-								<div class="sub-item-form">
-									<label>E-mail: </label>
-									<input type="email" name="email" required>
-								</div>
-							</div>
-
-							<div class="item-form">
-								<label>Assunto: </label>
-								<input type="text" name="assunto">
-							</div>
-
-							<div class="item-form">
-								<label>Descrição: </label>
-								<textarea></textarea>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
-
-			<div id="whatsapp-button">
-				<a href="https://wa.me/+556294285690" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png"></a>
-			</div>
-		</main>
-
-		<footer>
-			<div class="content-footer">
-				<div class="sobre-footer">
-					<img src="galeria/logoBranca.png">
-
-					<span>A Arawauka Soluções em Meio Ambiente é uma empresa que tem seus trabalhos voltados a projetos e soluções no que concerne à temática ambiental de empreendimentos a nível municipal, estadual e federal.</span>
-				</div>
-
-				<div class="social-footer">
-					<div class="contact-footer">
-						<p class="title-footer">Contato</p>
-
-						<div class="list-contato-footer">
-							<p><span class="material-symbols-outlined">call</span><span>(62) 99999-9999</span></p>
-							<p><span class="material-symbols-outlined">call</span><span>(62) 3232-3232</span></p>
-						</div>
-					</div>
-
+			<main>
+				<section id="section-banner">
 					<div>
-						<p class="title-footer">Social</p>
+						<div class="div-text-banner">
+							<p class="title-banner">Ajudando a deixar o meio ambiente adequado para as gerações futuras!</p>
 
-						<div class="list-social-footer">
-							<a href="#"><div class="item-social">
-								<img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png">
-							</div></a>
+							<p class="text-banner">Zelando pelo cumprimento das políticas ambientais, trabalhando harmonicamente com a natureza garantindo a melhoria da produção com a qualidade do trabalho e a preservação ambiental.</p>
 
-							<a href="#"><div class="item-social">
-								<img src="https://cdn-icons-png.flaticon.com/512/3128/3128208.png">
+							<a href="sobre.html"><div class="button-sobre">
+								<span>Saiba Mais</span>
 							</div></a>
 						</div>
 					</div>
+				</section>
+
+				<section id="section-atuacao">
+					<div>
+						<div class="div-title-section">	
+							<h2 class="title-section">NOSSA ATUAÇÃO</h2>
+							<p class="subtitle-section">Conheça um pouco mais sobre nossa área de atuação</p>
+						</div>
+
+						<div class="content-atuacao">
+							<ul class="list-atuacao">
+								<li class="item-atuacao">
+									<img src="https://cdn-icons-png.flaticon.com/512/3732/3732465.png">
+
+									<p>Energia</p>
+								</li>
+
+								<li class="item-atuacao">
+									<img src="https://cdn-icons-png.flaticon.com/512/6984/6984983.png">
+
+									<p>Infraestrutura e Transporte</p>
+								</li>
+
+								<li class="item-atuacao">
+									<img src="https://cdn-icons-png.flaticon.com/512/3275/3275628.png">
+
+									<p>Mineração</p>
+								</li>
+
+								<li class="item-atuacao">
+									<img src="https://cdn-icons-png.flaticon.com/512/3256/3256216.png">
+
+									<p>Indústria</p>
+								</li>
+
+								<li class="item-atuacao">
+									<img src="https://cdn-icons-png.flaticon.com/512/2098/2098439.png">
+
+									<p>Empreendimentos on-shore e off-shore</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section id="section-servicos">
+					<div>
+						<div class="div-title-section">	
+							<h2 class="title-section">SERVIÇOS PRESTADOS</h2>
+						</div>
+
+						<div class="content-servicos">
+							<div class="item-servicos" id="serv-gestao">
+								<div class="dark-div"></div>
+
+								<p>Gestão e Licenciamento Ambiental</p>
+							</div>
+
+							<div class="item-servicos" id="serv-gerenciamento">
+								<div class="dark-div"></div>
+
+								<p>Gerenciamento e Execução de Planos, Projetos e Programas Ambientais</p>
+							</div>
+
+							<div class="item-servicos" id="serv-conservacionistas">
+								<div class="dark-div"></div>
+
+								<p>Projetos Conservacionistas</p>
+							</div>
+
+							<div class="item-servicos" id="serv-complementares">
+								<div class="dark-div"></div>
+
+								<p>Serviços Ambientais Complementares</p>
+							</div>
+
+							<div class="item-servicos" id="serv-audio">
+								<div class="dark-div"></div>
+
+								<p>Produção Audiovisual</p>
+							</div>
+						</div>
+
+						<div class="img-servicos">
+							<img src="galeria/favicon.png">
+						</div>
+					</div>
+				</section>
+
+				<section id="section-diferencial">
+					<div>
+						<div class="div-title-section">	
+							<h2 class="title-section">NOSSOS DIFERENCIAIS</h2>
+						</div>
+
+						<div class="content-diferencial">
+							<div class="item-diferencial">
+								<img src="https://cdn-icons-png.flaticon.com/512/476/476863.png">
+
+								<p>Equipe Técnica multidisciplinar com alta capacidade para resolução de problemas</p>
+							</div>
+
+							<div class="item-diferencial">
+								<img src="https://cdn-icons-png.flaticon.com/512/5404/5404922.png">
+
+								<p>Bom relacionamento com órgãos ambientais</p>
+							</div>
+
+							<div class="item-diferencial">
+								<img src="https://cdn-icons-png.flaticon.com/512/1550/1550010.png">
+
+								<p>Cumprimento dos prazos acordados e rapidez na entrega dos produtos</p>
+							</div>
+
+							<div class="item-diferencial">
+								<img src="https://cdn-icons-png.flaticon.com/512/4718/4718471.png">
+
+								<p>Alta qualidade dos relatórios e demais produtos</p>
+							</div>
+
+							<div class="item-diferencial">
+								<img src="https://cdn-icons-png.flaticon.com/512/4371/4371115.png">
+
+								<p>Transparência nas etapas do processo</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="section-parceiros">
+					<div>
+						<div class="div-title-section">	
+							<h2 class="title-section">NOSSOS PARCEIROS</h2>
+						</div>
+
+						<div class="list-parceiros">
+							<a href="https://www.instagram.com/tubofilmes/" target="_blank"><div class="item-parceiro" id="tubo-filmes">
+							</div></a>
+
+							<a href="https://www.instagram.com/lmfirmadeadvocacia/" target="_blank"><div class="item-parceiro" id="lm-advocacia">
+							</div></a>
+						</div>
+					</div>
+				</section>
+
+				<section id="section-contato">
+					<div>
+						<div class="div-title-section">	
+							<h2 class="title-section">FALE CONOSCO</h2>
+						</div>
+
+						<div class="content-contato">
+							<form>
+								<div class="item-form double-item-form">
+									<div class="sub-item-form">
+										<label>Nome: </label>
+										<input type="text" name="nome" required>
+									</div>
+
+									<div class="sub-item-form">
+										<label>E-mail: </label>
+										<input type="email" name="email" required>
+									</div>
+								</div>
+
+								<div class="item-form">
+									<label>Assunto: </label>
+									<input type="text" name="assunto">
+								</div>
+
+								<div class="item-form">
+									<label>Descrição: </label>
+									<textarea></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<div id="whatsapp-button">
+					<a href="https://wa.me/+556294285690" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png"></a>
+				</div>
+			</main>
+
+			<footer>
+				<div class="content-footer">
+					<div class="sobre-footer">
+						<img src="galeria/logoBranca.png">
+
+						<span>A Arawauka Soluções em Meio Ambiente é uma empresa que tem seus trabalhos voltados a projetos e soluções no que concerne à temática ambiental de empreendimentos a nível municipal, estadual e federal.</span>
+					</div>
+
+					<div class="social-footer">
+						<div class="contact-footer">
+							<p class="title-footer">Contato</p>
+
+							<div class="list-contato-footer">
+								<p><span class="material-symbols-outlined">call</span><span>(62) 99999-9999</span></p>
+								<p><span class="material-symbols-outlined">call</span><span>(62) 3232-3232</span></p>
+							</div>
+						</div>
+
+						<div>
+							<p class="title-footer">Social</p>
+
+							<div class="list-social-footer">
+								<a href="#"><div class="item-social">
+									<img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png">
+								</div></a>
+
+								<a href="#"><div class="item-social">
+									<img src="https://cdn-icons-png.flaticon.com/512/3128/3128208.png">
+								</div></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="local-footer">
+						<p class="title-footer">Onde Estamos</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.5041342316295!2d-40.844826385468686!3d-14.85306248964209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7463bb1fe560a8b%3A0x83e2c9087475798b!2sRua%20da%20Miseric%C3%B3rdia%2C%20286%20-%20Centro%2C%20Vit%C3%B3ria%20da%20Conquista%20-%20BA%2C%2045000-200!5e0!3m2!1spt-BR!2sbr!4v1677451895593!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
 				</div>
 
-				<div class="local-footer">
-					<p class="title-footer">Onde Estamos</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.5041342316295!2d-40.844826385468686!3d-14.85306248964209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7463bb1fe560a8b%3A0x83e2c9087475798b!2sRua%20da%20Miseric%C3%B3rdia%2C%20286%20-%20Centro%2C%20Vit%C3%B3ria%20da%20Conquista%20-%20BA%2C%2045000-200!5e0!3m2!1spt-BR!2sbr!4v1677451895593!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="dev">
+					<p>©2023 - ARAUWAUKA SOLUÇÕES EM MEIO AMBIENTE</p>
+					<p>DESENVOLVIDO POR <a href="https://github.com/matheuspfalconi" target="_blank">MATHEUS FALCONI ❤</a></p>
 				</div>
-			</div>
-
-			<div class="dev">
-				<p>©2023 - ARAUWAUKA SOLUÇÕES EM MEIO AMBIENTE</p>
-				<p>DESENVOLVIDO POR <a href="https://github.com/matheuspfalconi" target="_blank">MATHEUS FALCONI ❤</a></p>
-			</div>
-		</footer>
+			</footer>
+		</div>
 	</body>
 </html>
