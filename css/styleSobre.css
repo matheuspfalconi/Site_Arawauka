@@ -12,11 +12,15 @@ main {
 	padding-top: 70px;
 }
 
+#section-sobre {
+}
+
 .content-sobre {
 	width: 100%;
 	max-width: 700px;
 	display: flex;
 	justify-content: space-between;
+	text-align: justify;
 }
 
 .text-sobre {
@@ -74,7 +78,6 @@ main {
 
 .item-valor {
 	width: 300px;
-	border: 1px solid dimgray;
 	border-radius: 5px;
 	margin-bottom: 30px;
 	text-align: center;

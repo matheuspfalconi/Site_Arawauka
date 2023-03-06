@@ -393,6 +393,11 @@ footer {
 	height: 25px;
 }
 
+#linkedin-logo {
+	width: 25px;
+	height: 25px;
+}
+
 .local-footer > iframe {
 	width: 100%; 
 	height: 170px;
