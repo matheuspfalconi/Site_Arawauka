@@ -19,9 +19,10 @@
     
         <link rel="shortcut icon" href="galeria/favicon.png">
 
-        <script type="text/javascript" src="js/loading.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/loading.js"></script>
         <script type="text/javascript" src="js/smoothScroll.js"></script>
+        <script type="text/javascript" src="js/toggleMenu.js"></script>
 	</head>
 
 	<body>
@@ -47,6 +48,23 @@
 							<span>Fale Conosco</span>
 						</div></a>
 					</nav>
+
+					<div id="div-nav-burger">
+						<div id="div-icon-burger" onclick="toggleMenu()">
+							<span class="icon-burger material-symbols-outlined" id="icon-open-menu">menu</span>
+							<span class="icon-burger material-symbols-outlined" id="icon-close-menu">close</span>
+						</div>
+					</div>
+				</div>
+
+				<div id="nav-burger">
+					<ul class="list-nav-burger">
+						<a href="index.html"><li class="item-list-nav-burger">Início</li></a>
+						<a href="sobre.html"><li class="item-list-nav-burger">Quem Somos</li></a>
+						<a href="servicos.html"><li class="item-list-nav-burger">Serviços</li></a>
+						<a href="publicacoes.html"><li class="item-list-nav-burger">Publicações</li></a>
+						<a href="#section-contato" onclick="toggleMenu()"><li class="item-list-nav-burger">Fale Conosco</li></a>
+					</ul>
 				</div>
 			</header>
 
@@ -62,10 +80,6 @@
 								<span>Saiba Mais</span>
 							</div></a>
 						</div>
-
-						<a href="#section-solucoes"><div id="div-arrow">
-							<span class="material-symbols-outlined">expand_more</span>
-						</div></a>
 					</div>
 				</section>
 
@@ -127,7 +141,7 @@
 
 				<section id="section-diferencial">
 					<div>
-						<div class="div-title-section">	
+						<div class="div-title-section" id="div-title-diferencial">	
 							<h2 class="title-section">NOSSOS DIFERENCIAIS</h2>
 						</div>
 
@@ -178,41 +192,41 @@
 						</div>
 
 						<div class="content-servicos">
-							<div class="item-servicos" id="serv-gestao">
+							<a href="servicos.html#servico1" class="anchor"><div class="item-servicos" id="serv-gestao">
 								<div class="dark-div"></div>
 
 								<p>Gestão e Licenciamento Ambiental</p>
-							</div>
+							</div></a>
 
-							<div class="item-servicos" id="serv-gerenciamento">
+							<a href="servicos.html#servico2" class="anchor"><div class="item-servicos" id="serv-gerenciamento">
 								<div class="dark-div"></div>
 
 								<p>Gerenciamento e Execução de Planos, Projetos e Programas Ambientais</p>
-							</div>
+							</div></a>
 
-							<div class="item-servicos" id="dir-ambiental">
+							<a href="servicos.html#servico3" class="anchor"><div class="item-servicos" id="dir-ambiental">
 								<div class="dark-div"></div>
 
 								<p>Direito Ambiental</p>
-							</div>
+							</div></a>
 
-							<div class="item-servicos" id="serv-conservacionistas">
+							<a href="servicos.html#servico4" class="anchor"><div class="item-servicos" id="serv-conservacionistas">
 								<div class="dark-div"></div>
 
 								<p>Projetos Conservacionistas</p>
-							</div>
+							</div></a>
 
-							<div class="item-servicos" id="serv-complementares">
+							<a href="servicos.html#servico5" class="anchor"><div class="item-servicos" id="serv-complementares">
 								<div class="dark-div"></div>
 
 								<p>Serviços Ambientais Complementares</p>
-							</div>
+							</div></a>
 
-							<div class="item-servicos" id="serv-audio">
+							<a href="servicos.html"><div class="item-servicos" id="serv-audio">
 								<div class="dark-div"></div>
 
 								<p>Produção Audiovisual</p>
-							</div>
+							</div></a>
 						</div>
 
 						<div class="img-servicos">

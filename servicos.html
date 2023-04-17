@@ -21,6 +21,7 @@
         
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/smoothScroll.js"></script>
+        <script type="text/javascript" src="js/toggleMenu.js"></script>
 	</head>
 
 	<body>
@@ -42,6 +43,23 @@
 						<span>Fale Conosco</span>
 					</div></a>
 				</nav>
+
+				<div id="div-nav-burger">
+					<div id="div-icon-burger" onclick="toggleMenu()">
+						<span class="icon-burger material-symbols-outlined" id="icon-open-menu">menu</span>
+						<span class="icon-burger material-symbols-outlined" id="icon-close-menu">close</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="nav-burger">
+				<ul class="list-nav-burger">
+					<a href="index.html"><li class="item-list-nav-burger">Início</li></a>
+					<a href="sobre.html"><li class="item-list-nav-burger">Quem Somos</li></a>
+					<a href="servicos.html"><li class="item-list-nav-burger">Serviços</li></a>
+					<a href="publicacoes.html"><li class="item-list-nav-burger">Publicações</li></a>
+					<a href="#section-contato" onclick="toggleMenu()"><li class="item-list-nav-burger">Fale Conosco</li></a>
+				</ul>
 			</div>
 		</header>
 
@@ -54,7 +72,101 @@
 					</div>
 
 					<div class="content-servicos">
-						
+						<div class="item-servico" id="servico1">
+							<p class="title-servico">Gestão e Licenciamento Ambiental</p>
+
+							<div class="div-line"></div>
+
+							<ul class="list-item-servico">
+								<li>Gestão Institucional</li>
+								<li>Auditorias Ambientais</li>
+								<li>Perícia Ambiental</li>
+								<li>Cadastro Ambiental Rural - CAR</li>
+								<li>Geoprocessamento</li>
+								<li>Due Diligence</li>
+								<li>Assessoria Técnica no Acompanhamento e negociações com stakeholders</li>
+								<li>Estratégia no Processo de Licenciamento Ambiental Municipal, Estadual e Federal</li>
+								<li>Análise Técnica da Legislação e Enquadramento dos Empreendimentos</li>
+								<li>Desenvolvimento de Sistemas de Gestão Ambiental</li>
+								<li>Elaboração de Documentos Técnicos</li>
+								<li>Estudo de Impacto Ambiental e Relatório de Impacto Ambiental - EIA/RIMA</li>
+								<li>Relatório de Controle Ambiental e Plano de Controle Ambiental - RCA/PCA</li>
+								<li>Análise de Risco Ambiental - ARA</li>
+								<li>Relatório Ambiental Simplificado – RAS</li>
+								<li>Relatório Ambiental Preliminar – RAP</li>
+								<li>Projeto de Intervenção Ambiental – PIA</li>
+								<li>Proposta de Compensação por Intervenções Ambientais - PCIA</li>
+							</ul>
+						</div>
+
+						<div class="item-servico" id="servico2">
+							<p class="title-servico">Gerenciamento e Execução de Planos, Projetos e Programas Ambientais</p>
+
+							<div class="div-line"></div>
+
+							<ul class="list-item-servico">
+								<li>Execução de Programas Socioambientais</li>
+								<li>Diagnóstico Socioparticipativo – DSP</li>
+								<li>Programa de Educação Ambiental (PEA e PEAT)</li>
+								<li>Inventário Florestal</li>
+								<li>Arqueologia</li>
+								<li>Compensação Ambiental</li>
+								<li>Prospecção Espeleológica</li>
+								<li>Manejo Vegetal e Gestão de Áreas Protegidas</li>
+								<li>Plano de Recuperação de Áreas Degradadas – PRAD</li>
+								<li>Resgate de Fauna e Flora</li>
+								<li>Diagnóstico, Monitoramento e Levantamento de Fauna e Flora</li>
+								<li>Programa de Monitoramento e Resgate de Fauna Atropelada</li>
+								<li>Monitoramento de Ictiofauna</li>
+								<li>Limnologia e Coleta e Análise de Água</li>
+								<li>Oceanografia</li>
+								<li>Avaliação Técnica dos Níveis de Ruídos e Vibrações</li>
+								<li>Estudos de Potencial Malarígeno</li>
+							</ul>
+						</div>
+
+						<div class="item-servico" id="servico3">
+							<p class="title-servico">Projetos Conservacionistas</p>
+
+							<div class="div-line"></div>
+
+							<ul class="list-item-servico">
+								<li>Projetos de Conservação de Espécies Ameaçadas</li>
+								<li>Programas de Monitoramento com espécies especificas</li>
+								<li>Criação de Unidades de Conservação (RPPN)</li>
+							</ul>
+						</div>
+
+						<div class="item-servico" id="servico4">
+							<p class="title-servico">Serviços Ambientais Complementares</p>
+
+							<div class="div-line"></div>
+
+							<ul class="list-item-servico">
+								<li>Elaboração e Execução de Planos de Gerenciamento de Resíduos Sólidos</li>
+								<li>Licenciamento Arqueológico e Gestão do patrimônio cultural</li>
+								<li>Estudo do Componente Quilombola</li>
+								<li>Estudo do Componente Indígena</li>
+								<li>Plano Básico Ambiental Quilombola</li>
+								<li>Plano Básico Ambiental Indígena</li>
+								<li>Cursos e Treinamentos</li>
+							</ul>
+						</div>
+
+						<div class="item-servico" id="servico5">
+							<p class="title-servico">Direito Ambiental</p>
+
+							<div class="div-line"></div>
+
+							<ul class="list-item-servico">
+								<li>Multas Ambientais</li>
+								<li>Celebração de Termo de Ajustamento de Conduta</li>
+								<li>Celebração de Termo de Responsabilidade Ambiental</li>
+								<li>Parecer Jurídico Ambiental</li>
+								<li>Licença e Registro de Produtos</li>
+								<li>Defesas em Ações Judiciais</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>

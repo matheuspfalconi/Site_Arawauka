@@ -21,6 +21,7 @@
         
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/smoothScroll.js"></script>
+        <script type="text/javascript" src="js/toggleMenu.js"></script>
 	</head>
 
 	<body>
@@ -42,6 +43,23 @@
 						<span>Fale Conosco</span>
 					</div></a>
 				</nav>
+
+				<div id="div-nav-burger">
+					<div id="div-icon-burger" onclick="toggleMenu()">
+						<span class="icon-burger material-symbols-outlined" id="icon-open-menu">menu</span>
+						<span class="icon-burger material-symbols-outlined" id="icon-close-menu">close</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="nav-burger">
+				<ul class="list-nav-burger">
+					<a href="index.html"><li class="item-list-nav-burger">Início</li></a>
+					<a href="sobre.html"><li class="item-list-nav-burger">Quem Somos</li></a>
+					<a href="servicos.html"><li class="item-list-nav-burger">Serviços</li></a>
+					<a href="publicacoes.html"><li class="item-list-nav-burger">Publicações</li></a>
+					<a href="#section-contato" onclick="toggleMenu()"><li class="item-list-nav-burger">Fale Conosco</li></a>
+				</ul>
 			</div>
 		</header>
 
