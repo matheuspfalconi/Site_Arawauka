@@ -10,6 +10,14 @@ CSS COLOR NAMES
 https://www.ranoya.com/books/public/css/corescss.php#:~:text=As%20cores%20na%20tecnologia%20web,um%20dado%20do%20tipo%20%2325A9F0%20.
 */
 
+/*Cores
+
+Primary Color: #12362F; (Verde)
+Secondary Color: #CB462C; (Laranja)
+Tertiary Color: #E4973B; (Amarelo)
+Background Color: #FEFEFE; (Branco)
+Text Color: 
+
 /*===================================Fontes Gerais===================================/
 Body - 16px
 H1 - 32px
@@ -106,6 +114,10 @@ main {
 	height: auto;
 }
 
+.show {
+	display: block !important;
+}
+
 /*Whatsapp Button*/
 
 #whatsapp-button {
@@ -148,7 +160,11 @@ section > div {
 	display: flex;
 	align-content: flex-start;
 	flex-wrap: wrap;
-	padding: 50px 50px;
+	padding: 50px;
+}
+
+#div-title-diferencial > .title-section, #div-title-missao > .title-section {
+	color: white;
 }
 
 .div-title-section {
@@ -162,6 +178,7 @@ section > div {
 
 .title-section {
 	width: 100%;
+	color: #12362F;
 }
 
 .subtitle-section {
@@ -185,7 +202,7 @@ header {
 header > div {
 	width: 100%;
 	max-width: 1080px;
-	padding: 0 50px;
+	padding: 10px 50px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -193,10 +210,12 @@ header > div {
 .div-logo {
 	display: flex;
 	align-items: center;
+	margin-right: 30px;
 }
 
 .div-logo img {
-	width: 200px;
+	width: 100%;
+	max-width: 200px;
 }
 
 nav {
@@ -248,6 +267,65 @@ nav {
 	transition: background .3s;
 }
 
+#div-icon-burger {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+#div-icon-burger > span {
+	font-size: 50px;
+}
+
+#icon-close-menu {
+	display: none;
+}
+
+#nav-burger {
+	display: none;
+	width: 100%;
+	height: min-content;
+	background-color: white;
+	border-top: 1px solid dimgray;
+	right: -100vw;
+}
+
+.list-nav-burger {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 10px;
+	padding-top: 30px;
+}
+
+.list-nav-burger > a {
+	width: 49%;
+	margin-bottom: 10px;
+}
+
+.item-list-nav-burger {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 0;
+	border-radius: 10px;
+	border: 2px solid #12362F;
+	background-color: #12362F;
+	color: white;
+	font-size: 1em;
+}
+
+.item-list-nav-burger:hover {
+	background: none;
+	color: black;
+}
+
 /*Contato*/
 
 #section-contato {
@@ -264,7 +342,6 @@ nav {
 
 .content-contato > form {
 	width: 100%;
-	padding: 50px;
 	border-radius: 5px;
 }
 
@@ -320,8 +397,9 @@ footer {
 	display: flex;
 	justify-content: center;
 	flex-wrap: nowrap;
+	flex: 1;
 	column-gap: 30px;
-	padding: 30px 0;
+	padding: 30px 50px;
 }
 
 .content-footer > div {
@@ -359,8 +437,8 @@ footer {
 	margin-right: 3px;
 }
 
-.social-footer > div + div {
-	margin-top: 30px;
+.contact-footer {
+	margin-bottom: 30px;
 }
 
 .list-social-footer {
@@ -430,4 +508,127 @@ footer {
 .dev p a:hover {
 	color: orange;
 	transition: .3s;
+}
+
+/*Responsividade*/
+@media(min-width: 1026px) {
+	#div-nav-burger {
+		display: none;
+	}
+
+	#nav-burger {
+		display: none !important;
+	}
+}
+
+@media(max-width: 1025px) {
+	header {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.div-nav-burger {
+		display: block;
+	}
+}
+
+@media(max-width: 800px) {
+	.content-footer {
+		flex-wrap: wrap;
+	}
+
+	.sobre-footer {
+		flex: 2;
+	}
+
+	.social-footer {
+		flex: 1;
+	}
+
+	.local-footer {
+		width: 100%;
+		margin-top: 30px;
+		border: none !important;
+		padding-left: 0 !important;
+	}
+
+}
+
+@media(max-width: 600px) {
+	/*Header*/
+	.list-nav-burger > a {
+		width: 100%;
+	}
+
+	/*Contato*/
+	.double-item-form {
+		flex-wrap: wrap;
+	}
+
+	.double-item-form > div + div {
+		margin-top: 20px;
+	}
+
+	.sub-item-form {
+		width: 100%;
+	}
+
+	/*Footer*/
+	.content-footer {
+		display: block;
+	}
+
+	.sobre-footer {
+		width: 100%;
+	}
+
+	.social-footer {
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		margin-top: 30px;
+		border: none !important;
+		padding-left: 0 !important;
+	}
+
+	.contact-footer {
+		margin-bottom: 0;
+		margin-right: 20px;
+		padding-right: 20px;
+		border-right: 2px solid rgba(255, 255, 255, .2);
+	}
+}
+
+@media(max-width: 460px) {
+	.social-footer {
+		flex-wrap: wrap;
+	}
+
+	.contact-footer {
+		margin-bottom: 30px;
+		border: none !important;
+	}
+}
+
+@media(max-width: 380px) {
+	section > div {
+		padding: 50px 20px;
+	}
+
+	.title-section {
+		font-size: 1.225em;
+	}
+
+	/*Header*/
+
+	header > div {
+		padding: 0 20px;	
+	}
+
+	.list-nav-burger > a {
+		width: 100%;
+	}
 }
