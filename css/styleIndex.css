@@ -117,7 +117,6 @@ body {
 
 .content-atuacao {
 	width: 100%;
-	max-width: 722px;
 }
 
 .list-atuacao {
@@ -130,7 +129,8 @@ body {
 
 .item-atuacao {
 	width: 100%;
-	max-width: 230px;
+	max-width: 300px;
+	min-width: 300px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -177,16 +177,16 @@ body {
 
 .content-diferencial {
 	width: 100%;
-	max-width: 722px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	column-gap: 15px;
 }
 
 .item-diferencial {
 	width: 100%;
-	min-width: 230px;
-	max-width: 230px;
+	min-width: 300px;
+	max-width: 300px;
 	height: auto;
 	margin-bottom: 15px;
 	padding: 20px;
