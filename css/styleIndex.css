@@ -111,7 +111,17 @@ body {
 	box-shadow: inset 0 0 10px rgba(0, 0, 0, .3);
 }
 
+#section-atuacao > div {
+	justify-content: center;
+}
+
+.content-atuacao {
+	width: 100%;
+	max-width: 722px;
+}
+
 .list-atuacao {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -120,7 +130,7 @@ body {
 
 .item-atuacao {
 	width: 100%;
-	max-width: 300px;
+	max-width: 230px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -150,6 +160,59 @@ body {
 .item-atuacao > p {
 	margin-top: 80px;
 	width: 100%;
+}
+
+/**/
+
+#section-diferencial {
+	width: 100%;
+	background-color: rgba(18, 54, 47, .6);
+	color: #FEFEFE;
+}
+
+#section-diferencial > div {
+	display: flex;
+	justify-content: center;
+}
+
+.content-diferencial {
+	width: 100%;
+	max-width: 722px;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 15px;
+}
+
+.item-diferencial {
+	width: 100%;
+	min-width: 230px;
+	max-width: 230px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, .3);
+	flex: 1;
+}
+
+.item-diferencial:hover {
+	box-shadow: 0 0 10px black;
+}
+
+.item-diferencial > img {
+	width: auto;
+	height: 100px;
+	padding: 10px 0;
+}
+
+.item-diferencial p {
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	border-top: 1px solid dimgray;
 }
 
 /**/
@@ -211,56 +274,6 @@ body {
 
 /**/
 
-#section-diferencial {
-	width: 100%;
-	background-color: rgba(18, 54, 47, .6);
-	color: #FEFEFE;
-}
-
-#section-diferencial > div {
-	display: flex;
-	justify-content: center;
-}
-
-.content-diferencial {
-	width: 100%;
-	max-width: 722px;
-	display: flex;
-	flex-wrap: wrap;
-	column-gap: 15px;
-}
-
-.item-diferencial {
-	width: 230px;
-	height: auto;
-	margin-bottom: 15px;
-	padding: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	border-radius: 10px;
-	background-color: rgba(0, 0, 0, .3);
-}
-
-.item-diferencial:hover {
-	box-shadow: 0 0 10px black;
-}
-
-.item-diferencial > img {
-	width: auto;
-	height: 100px;
-	padding: 10px 0;
-}
-
-.item-diferencial p {
-	width: 100%;
-	padding: 10px 0;
-	text-align: center;
-	border-top: 1px solid dimgray;
-}
-
-/**/
-
 #section-parceiros {
 	width: 100%;
 	background-color: #FEFEFE
@@ -308,10 +321,17 @@ body {
 	}
 }
 
-@media(max-width: 380px) {
-	#section-banner {
-		height: auto;
+@media(max-width: 574px) {
+	.item-atuacao {
+		max-width: 300px;
 	}
+
+	.item-diferencial {
+		max-width: 300px;
+	}
+}
+
+@media(max-width: 380px) {
 
 	.title-banner {
 		font-size: 1.225em;
