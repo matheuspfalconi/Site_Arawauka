@@ -158,6 +158,7 @@ body {
 	width: 100%;
 	background-color: #FEFEFE;
 	box-shadow: inset 0 0 10px rgba(0, 0, 0, .3);
+	overflow-x: hidden;
 }
 
 .content-servicos {
@@ -166,6 +167,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	column-gap: 15px;
+	overflow-x: hidden;
 }
 
 .item-servicos {
@@ -206,21 +208,6 @@ body {
 #serv-conservacionistas {background-image: url('https://img.freepik.com/free-photo/elderly-person-children-holding-plant_1150-18573.jpg?w=740&t=st=1677514536~exp=1677515136~hmac=808a866193cfca42edb8d6fff6514682367c01d45fee2037051b8218034ff54b');}
 #serv-complementares {background-image: url('https://img.freepik.com/free-photo/businesspeople-meeting-plan-analysis-graph-company-finance-strat_74952-1347.jpg?w=996&t=st=1677514585~exp=1677515185~hmac=d9c1bccdcced60b31debd020503760c0b7eb3215163be7ad5160ae29f4d31c73');}
 #serv-audio {background-image: url('https://img.freepik.com/free-photo/aerial-view-blue-sky-with-white-clouds-floating-fields_181624-60374.jpg?w=740&t=st=1677514622~exp=1677515222~hmac=60f5b2308638465220c682a9c8c7b082b588c4b8f4ada638eba58e3e8b2a14ad');}
-
-.img-servicos {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	padding: 0 50px;
-	margin-top: 150px;
-	margin-left: 500px;
-	z-index: 0;
-}
-
-.img-servicos > img {
-	width: 800px;
-	opacity: .3;
-}
 
 /**/
 
