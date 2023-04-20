@@ -17,20 +17,33 @@ main {
 
 .content-sobre {
 	width: 100%;
-	max-width: 700px;
 	display: flex;
 	justify-content: space-between;
 	text-align: justify;
 }
 
 .text-sobre {
-	padding-right: 40px;
+	width: 100%;
 	text-indent: 30px;
 	line-height: 28px;
+	flex: 1;
 }
 
 .text-sobre > p + p {
 	margin-top: 10px;
+}
+
+.img-sobre {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex: 0.8;
+}
+
+.img-sobre > img {
+	width: 100%;
+	padding-left: 70px;
+	opacity: .8;
 }
 
 /**/
@@ -92,4 +105,12 @@ main {
 .content-visao {
 	text-align: center;
 	line-height: 28px;
+}
+
+/*Responsividade*/
+
+@media (max-width: 1024px) {
+	.img-sobre {
+		display: none;
+	}
 }
